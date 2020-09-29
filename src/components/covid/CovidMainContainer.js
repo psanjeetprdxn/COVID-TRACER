@@ -1,15 +1,35 @@
-import React from 'react'
-import CountrySelectorContainer from './CountrySelectorContainer'
-import CurrentData from './CurrentData'
+import React from "react";
+import { connect } from "react-redux";
 
+import CountrySelectorContainer from "./CountrySelectorContainer";
+import CurrentData from "./CurrentData";
+import CovidTrackerChart from "./CovidTrackerChart";
 
-function CovidMainContainer() {
+import { Redirect } from "react-router-dom";
+
+function CovidMainContainer(props) {
+  let redirect = (
+    <Redirect
+      to={{
+        pathname: "/login",
+      }}
+    />
+  );
+
   return (
     <>
+      {!props.authData.isLoggedIn ? redirect : null}
       <CountrySelectorContainer />
       <CurrentData />
+      <CovidTrackerChart />
     </>
-  )
+  );
 }
 
-export default CovidMainContainer
+const mapStateToProps = (state) => {
+  return {
+    authData: state.authData,
+  };
+};
+
+export default connect(mapStateToProps)(CovidMainContainer);

@@ -19,13 +19,8 @@ class CountrySelectorContainer extends Component {
     this.props.fetchCovidData(event.target.value)
   }
 
-  // handleSubmit(event) {
-  //   alert('Your favorite flavor is: ' + this.state.value);
-  //   event.preventDefault();
-  // }
-
   componentDidMount() {
-    if (!this.props.covidData.data.length >= 1) {
+    if (this.props.covidData.data.length < 1) {
       this.props.fetchCovidData(this.state.country)
     }
   }

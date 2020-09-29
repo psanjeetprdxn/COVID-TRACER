@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.logout {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  padding: 9px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background: darkgreen;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: .3s background linear;
+}
+
+.logout:hover {
+  background: #00ff00;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+}
+
+.error { 
+  color: red;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-top: 5px;
+ }
+
+.login-form {
+  padding: 40px 80px;
+  background: #218F76;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-control {
+  padding-top: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.form-control input {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.form-control label {
+  color: white;
+  padding-right: 10px;
+  font-size: 20px;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.form-control input {
+  outline: none;
+  padding: 5px 5px 4px;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  padding-top: 10px;
+  margin-top: 25px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background: #00001122;
+  width: 100%;
+  transition: .3s ease-in-out;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #00001166;
+}
+
+.redirect-link {
+  display: block;
+  padding-top: 10px;
+  margin-top: 25px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background: #00001122;
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+
+.redirect-link:hover {
+  background: #00001166;
+}

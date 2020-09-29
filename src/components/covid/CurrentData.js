@@ -3,12 +3,6 @@ import{ connect } from 'react-redux'
 import loader from '../../assets/images/831.svg'
 
 function CurrentData(props) {
-  console.log(props.covidData.data)
-
-  // if ((props.covidData.loading === false) && (props.covidData.loading != null)) {
-  //   console.log("andar gus gaya")
-  // }
-
   return (
     <>
       {
