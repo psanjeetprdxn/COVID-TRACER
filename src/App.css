@@ -51,7 +51,7 @@ table {
 .App {
   text-align: center;
   background: #2F363F;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .main {

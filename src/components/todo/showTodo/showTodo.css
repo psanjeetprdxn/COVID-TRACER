@@ -1,0 +1,25 @@
+.todo_container {
+  margin-top: 40px;
+}
+
+.todo_container li {
+  padding: 10px 0;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.todo-delete {
+  display: inline-block;
+    width: 100px;
+}
