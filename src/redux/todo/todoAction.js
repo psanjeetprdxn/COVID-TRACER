@@ -84,3 +84,14 @@ export const deleteTodo = (id, userId) => {
   }
 }
 
+export const updateTodo = (id, completed, userId) => {
+  return dispatch => {
+    axios.patch(`https://covid-tracker-ae9cd.firebaseio.com/todos/${id}.json`, {
+      completed: completed
+    })
+    .then(response => {
+      dispatch(fetchTodo(userId))
+    })
+  }
+}
+
